@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+:root{
+    --clr-nutmeg:hsl(14, 45%, 36%);
+    --clr-raspberry: hsl(332, 51%, 32%);
+
+    --clr-rosewhite: hsl(330, 100%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-eggshell: hsl(30, 54%, 90%);
+    --clr-lightgray: hsl(30, 18%, 87%);
+    --clr-wengebrown: hsl(30, 10%, 34%);
+    --clr-charcoal: hsl(24, 5%, 18%);
+
+    --ff-primary:'Young Serif', serif;
+    --ff-secondary:'Outfit', sans-serif;
+}
+
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: var(--ff-primary)
+}
+
+.container{
+    background-color: var(--clr-white);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 2rem;
+    width: 500px;
+
+}
+
+.image{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.topic{
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.description{
+    font-family: var(--ff-secondary);
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.time{
+    background-color: var(--clr-rosewhite);
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: var(--ff-secondary);
+}
+
+.time h2{
+    color: var(--clr-raspberry);
+    font-size: 12px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.time li{
+    font-size: 11px;
+    margin-left: 0.5rem;
+    color: var(--clr-wengebrown);
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: "\2022";
+    font-weight: bold;
+    color: var(--clr-charcoal);
+    display: inline-block;
+    width: 2em;
+}
+
+.time span{
+    font-weight: bold;
+}
+
+.ingredients {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--clr-lightgray);
+    padding-bottom: 1.5rem;
+}
+
+.ingredients h2{
+    color: var(--clr-nutmeg);
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.ingredients li{
+    font-family: var(--ff-secondary);
+    font-size: 11px;
+    font-weight: 100;
+    margin-left: 0.5rem;
+    color: var(--clr-wengebrown);
+    line-height: 1.5;
+}
+
+.instructions{
+    font-size: 11px;
+    border-bottom: 1px solid var(--clr-lightgray);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.instructions h2{
+    color: var(--clr-nutmeg);
+    font-weight: var(--ff-primary);
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.first-item{
+    display: flex;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.3rem;
+}
+
+h4{
+    color: var(--clr-nutmeg);
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.first-item p{
+    color: var(--clr-wengebrown);
+}
+
+.first-item span{
+    color: var(--clr-wengebrown);
+    font-weight: 1000;
+}
+
+.second-item{
+    display: flex;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.second-item p{
+    color: var(--clr-wengebrown);
+}
+
+.second-item span{
+    color: var(--clr-wengebrown);
+    font-weight: 1000;
+}
+
+.third-item{
+    display: flex;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.third-item p{
+    color: var(--clr-wengebrown);
+}
+
+.third-item span{
+    color: var(--clr-wengebrown);
+    font-weight: 1000;
+}
+
+.forth-item{
+    display: flex;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.forth-item p{
+    color: var(--clr-wengebrown);
+}
+
+.forth-item span{
+    color: var(--clr-wengebrown);
+    font-weight: 1000;
+}
+
+.fifth-item{
+    display: flex;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.fifth-item p{
+    color: var(--clr-wengebrown);
+}
+
+.fifth-item span{
+    color: var(--clr-wengebrown);
+    font-weight: 1000;
+}
+
+.sixth-item{
+    display: flex;
+    font-family: var(--ff-secondary);
+}
+
+.sixth-item p{
+    color: var(--clr-wengebrown);
+}
+
+.sixth-item span{
+    color: var(--clr-wengebrown);
+    font-weight: 1000;
+}
+
+/* .nutrition{
+
+} */
+
+.nutrition h2{
+    color: var(--clr-nutmeg);
+    font-weight: var(--ff-primary);
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.nutrition-description{
+    font-size: 11px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-wengebrown);
+    margin-bottom: 1.3rem;
+}
+
+.first-nutrition{
+    display: flex;
+    border-bottom: 1px solid var(--clr-lightgray);
+    margin-bottom: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+.first-nutrition-name{
+    font-size: 11px;
+    color: var(--clr-wengebrown);
+    font-family: var(--ff-secondary);
+    flex-basis: 220px;
+    margin-left: 1.2rem;
+}
+
+.first-nutrition-cal{
+    font-size: 11px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-raspberry);
+    font-weight: 800;
+}
+
+.second-nutrition{
+    display: flex;
+    border-bottom: 1px solid var(--clr-lightgray);
+    margin-bottom: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+.second-nutrition-name{
+    font-size: 11px;
+    color: var(--clr-wengebrown);
+    font-family: var(--ff-secondary);
+    flex-basis: 220px;
+    margin-left: 1.2rem;
+}
+
+.second-nutrition-cal{
+    font-size: 11px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-raspberry);
+    font-weight: 800;
+}
+
+.third-nutrition{
+    display: flex;
+    border-bottom: 1px solid var(--clr-lightgray);
+    margin-bottom: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+.third-nutrition-name{
+    font-size: 11px;
+    color: var(--clr-wengebrown);
+    font-family: var(--ff-secondary);
+    flex-basis: 220px;
+    margin-left: 1.2rem;
+}
+
+.third-nutrition-cal{
+    font-size: 11px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-raspberry);
+    font-weight: 800;
+}
+
+.forth-nutrition{
+    display: flex;
+}
+
+.forth-nutrition-name{
+    font-size: 11px;
+    color: var(--clr-wengebrown);
+    font-family: var(--ff-secondary);
+    flex-basis: 220px;
+    margin-left: 1.2rem;
+}
+
+.forth-nutrition-cal{
+    font-size: 11px;
+    font-family: var(--ff-secondary);
+    color: var(--clr-raspberry);
+    font-weight: 800;
+}
